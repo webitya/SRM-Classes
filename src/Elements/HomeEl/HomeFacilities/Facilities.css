@@ -1,0 +1,20 @@
+.facilities-section {
+    background-color: #f7f9fc; /* Light background for the section */
+  }
+  
+  .facility-card {
+    padding: 20px; /* Spacing within cards */
+    border: none; /* No border */
+    transition: transform 0.3s; /* Smooth scaling effect */
+  }
+  
+  .facility-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .highlight-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333; /* Highlight message color */
+  }
+  

@@ -1,0 +1,18 @@
+/* UpcomingCoursesSection.css */
+
+.card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    color: #1e40af; /* Dark blue */
+  }
+  
+  p {
+    color: #ffffff; /* White for descriptions */
+  }
+  

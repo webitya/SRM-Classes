@@ -1,0 +1,35 @@
+/* VideoSection.css */
+
+/* Play button hover effect */
+.play-button button {
+    transition: transform 0.3s ease;
+  }
+  
+  .play-button button:hover {
+    transform: scale(1.2); /* Increased scaling for hover */
+  }
+  
+  /* Modal customization */
+  .video-modal .ant-modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .video-modal .ant-modal-header {
+    border-bottom: none;
+  }
+  
+  /* Video card content styling */
+  .video-card .p-4 h3 {
+    color: #333;
+  }
+  
+  .video-card .p-4 p {
+    color: #555;
+  }
+  .play-button-no-bg {
+    background-color: transparent !important; /* Remove background */
+    border: none !important; /* Remove border */
+    color: white; /* Set text color, if needed */
+  }
+  

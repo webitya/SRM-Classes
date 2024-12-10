@@ -1,0 +1,112 @@
+/* LiveLectureHero.css */
+
+/* Hero Section Gradient and Layout */
+.hero-section {
+    background-image: linear-gradient(to right, #4f46e5, #7c3aed);
+    position: relative;
+  }
+  
+  /* Button Styles */
+  .live-btn {
+    background-color: #FF6347; /* Red for urgency */
+    border: none;
+  }
+  
+  .more-info-btn {
+    background-color: #fff;
+    color: #4f46e5;
+    border: none;
+  }
+  
+  .more-info-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Live Red Dot */
+  .live-dot {
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Pulse Animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+  }
+  
+  /* Floating Icon Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes float-reverse {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes float-fast {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .icon-animation {
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  .icon-animation:nth-child(2) {
+    animation: float-fast 3s ease-in-out infinite;
+  }
+  
+  .icon-animation:nth-child(3) {
+    animation: float-reverse 5s ease-in-out infinite;
+  }
+  
+  .icon-animation:nth-child(4) {
+    animation: float-slow 7s ease-in-out infinite;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  

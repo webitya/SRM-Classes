@@ -1,0 +1,40 @@
+/* Hide the default Tawk.to chat icon */
+#tawkchat {
+    display: none !important; /* Hide the entire widget */
+  }
+  
+  /* Style for the chat button container */
+  .tawk-chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Ensure the button is on top */
+  }
+  
+  /* Style for the chat button */
+  .chat-button {
+    width: 60px; /* Set a fixed size for the button */
+    height: 60px; /* Set a fixed size for the button */
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.3s ease; /* Animation on hover */
+  }
+  
+  /* Optional: Add hover effect for button */
+  .chat-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Optional: Add a chat icon or image to the button */
+  .chat-button:before {
+    content: ''; /* Add your own chat icon or image */
+    display: block;
+    width: 100%; /* Adjust width to fit */
+    height: 100%; /* Adjust height to fit */
+    background-image: url('path/to/your/icon.png'); /* Replace with your icon URL */
+    background-size: cover; /* Cover the button */
+  }
+  
